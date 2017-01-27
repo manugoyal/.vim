@@ -18,3 +18,6 @@ set lazyredraw
 " Enhanced commandline completion
 set wildmode=list:longest,full
 set wildmenu
+
+" Copy and paste to system clipboard
+set clipboard=unnamed
