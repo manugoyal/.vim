@@ -1,13 +1,17 @@
 " No vi compatibility
 set nocompatible
 
-" Filetype detection
-filetype on
-filetype plugin on
-filetype indent on
-
-" Syntax highlighting
-syntax on
-
-" Hide buffers rather than closing them
+" Enables hidden buffers
 set hidden
+
+" No syntax highlighting
+syntax off
+
+" Copy indent from the previous line
+set autoindent
+
+" Use spaces instead of tabs
+set expandtab
+
+" Plugins are installed through pathogen
+execute pathogen#infect()
