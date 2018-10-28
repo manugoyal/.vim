@@ -24,5 +24,7 @@ let g:ctrlp_custom_ignore = {
 " No limit on number of files cached by CtrlP.
 let g:ctrlp_max_files=0
 
-" We're on a dark background, so use an appropriate color scheme.
-colorscheme desert
+" Use the solarized colorscheme.
+set background=light
+colorscheme solarized
+
