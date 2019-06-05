@@ -16,15 +16,13 @@ set expandtab
 " Plugins are installed through pathogen
 execute pathogen#infect()
 
-" Set some specific paths for CtrlP to ignore.
-let g:ctrlp_custom_ignore = {
-  \ 'dir': '\vbiz\/business_dashboard\/static\/data',
-  \ }
-
-" No limit on number of files cached by CtrlP.
-let g:ctrlp_max_files=0
-
 " Use the solarized colorscheme.
 set background=light
 colorscheme solarized
 
+" Fzf
+set rtp+=~/.fzf
+nmap <leader>fg :GitFiles<CR>
+nmap <leader>ff :Files<CR>
+nmap <leader>fb :Buffers<CR>
+nmap <leader>rg :Rg<CR>
