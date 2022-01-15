@@ -7,11 +7,21 @@ set hidden
 " No syntax highlighting
 syntax off
 
+" No filetype detection
+filetype off
+
 " Copy indent from the previous line
 set autoindent
 
-" Use spaces instead of tabs
+" Use spaces instead of tabs.
 set expandtab
+
+" 4 spaces per tab
+set tabstop=4
+set shiftwidth=4
+
+" No highlighting when searching
+set nohlsearch
 
 " Plugins are installed through pathogen
 execute pathogen#infect()
