@@ -26,10 +26,6 @@ set nohlsearch
 " Plugins are installed through pathogen
 execute pathogen#infect()
 
-" Use the solarized colorscheme.
-set background=light
-colorscheme solarized
-
 " Fzf
 set rtp+=~/.fzf
 nmap <leader>fg :GitFiles<CR>
