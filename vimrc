@@ -32,3 +32,7 @@ nmap <leader>fg :GitFiles<CR>
 nmap <leader>ff :Files<CR>
 nmap <leader>fb :Buffers<CR>
 nmap <leader>rg :Rg<CR>
+
+" Use the solarized colorscheme.
+set background=light
+colorscheme solarized
