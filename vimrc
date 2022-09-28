@@ -23,6 +23,11 @@ set shiftwidth=4
 " No highlighting when searching
 set nohlsearch
 
+" 80 characters per line (also controls wrapping by 'gq').
+set textwidth=80
+" But don't auto-wrap text, only comments and 'gq'.
+set formatoptions=cq
+
 " Plugins are installed through pathogen
 execute pathogen#infect()
 
