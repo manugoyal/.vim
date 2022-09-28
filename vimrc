@@ -41,3 +41,9 @@ nmap <leader>rg :Rg<CR>
 " Use the solarized colorscheme.
 set background=light
 colorscheme solarized
+
+" If ripgrep is available, use it as our default grep program.
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
+  set grepformat=%f:%l:%c:%m
+endif
