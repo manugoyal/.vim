@@ -47,3 +47,7 @@ if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
   set grepformat=%f:%l:%c:%m
 endif
+
+" Set netrw sorting order to strictly lexicographic. Do this after loading
+" vim-vinegar, which has its own setting.
+:au VimEnter * if exists('g:loaded_vinegar') | let g:netrw_sort_sequence="*" | endif
