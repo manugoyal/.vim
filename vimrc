@@ -37,10 +37,6 @@ nmap <leader>fg :GitFiles<CR>
 nmap <leader>ff :Files<CR>
 nmap <leader>fb :Buffers<CR>
 
-" Use the solarized colorscheme.
-set background=light
-colorscheme solarized
-
 " If ripgrep is available, use it as our default grep program.
 if executable("rg")
   set grepprg=rg\ --vimgrep\ --smart-case\ --hidden
